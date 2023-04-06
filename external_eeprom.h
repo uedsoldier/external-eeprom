@@ -70,10 +70,10 @@ external_eeprom_status_t external_eeprom_init(external_eeprom_size_t device_capa
 external_eeprom_status_t external_eeprom_write(void *data, uint32_t addr, size_t len);
 external_eeprom_status_t external_eeprom_read(void *data, uint32_t addr, size_t len);
 
-uint32_t external_eeprom_getDeviceCapacity();
-uint32_t external_eeprom_getTotalCapacity();
-uint32_t external_eeprom_getMaxAddress();
-uint16_t external_eeprom_getPageSize();
+uint32_t external_eeprom_getDeviceCapacity(void);
+uint32_t external_eeprom_getTotalCapacity(void);
+uint32_t external_eeprom_getMaxAddress(void);
+uint16_t external_eeprom_getPageSize(void);
 #pragma endregion
 
 #ifdef __cplusplus
